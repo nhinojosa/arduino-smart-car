@@ -1,6 +1,6 @@
 #include "IRremote.h"
 
-int receiver = 3; // Signal Pin of IR receiver to Arduino Digital Pin 11
+int receiver = 11; // Signal Pin of IR receiver to Arduino Digital Pin 11
 
 /*-----( Declare objects )-----*/
 IRrecv irrecv(receiver);     // create instance of 'irrecv'
@@ -27,16 +27,16 @@ void translateIR() // takes action based on IR code received
   case 0xFF906F: Serial.println("UP");    break;
   case 0xFF9867: Serial.println("EQ");    break;
   case 0xFFB04F: Serial.println("ST/REPT");    break;
-  case 0x20DF8877: Serial.println("1");    break;
-  case 0x20DF48B7: Serial.println("2");    break;
-  case 0x20DFC837: Serial.println("3");    break;
-  case 0x20DF28D7: Serial.println("4");    break;
-  case 0x20DFA857: Serial.println("5");    break;
-  case 0x20DF6897: Serial.println("6");    break;
-  case 0x20DFE817: Serial.println("7");    break;
-  case 0x20DF18E7: Serial.println("8");    break;
-  case 0x20DF9867: Serial.println("9");    break;
-  case 0x20DF08F7: Serial.println("0");    break;
+  case 0xFD08F7: Serial.println("1");    break;
+  case 0xFD8877: Serial.println("2");    break;
+  case 0xFD48B7: Serial.println("3");    break;
+  case 0xFD28D7: Serial.println("4");    break;
+  case 0xFDA857: Serial.println("5");    break;
+  case 0xFD6897: Serial.println("6");    break;
+  case 0xFD18E7: Serial.println("7");    break;
+  case 0xFD9867: Serial.println("8");    break;
+  case 0xFD58A7: Serial.println("9");    break;
+  case 0xFD30CF: Serial.println("0");    break;
   case 0xFFFFFFFF: Serial.println(" REPEAT");break;  
 
   default: 
