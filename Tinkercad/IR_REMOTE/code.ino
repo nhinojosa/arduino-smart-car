@@ -1,6 +1,6 @@
 #include "IRremote.h"
 
-int receiver = 11; // Signal Pin of IR receiver to Arduino Digital Pin 11
+int receiver = 3; // Signal Pin of IR receiver to Arduino Digital Pin 11
 
 /*-----( Declare objects )-----*/
 IRrecv irrecv(receiver);     // create instance of 'irrecv'
