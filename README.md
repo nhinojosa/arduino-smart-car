@@ -1,4 +1,4 @@
-# Welcome Summer Camp 2022 arduino-smart-car
+# https://github.com/nhinojosa/arduino-smart-car
 ## Videos
 - https://youtu.be/JFJmut94Jpc
 ## Tinkercad Link
