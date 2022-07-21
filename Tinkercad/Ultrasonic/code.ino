@@ -1,7 +1,7 @@
 // C++ code
 //
 const int triggerPin = 12;
-const int echoPin = 11;
+const int echoPin = 13;
 
 void setup()
 {
